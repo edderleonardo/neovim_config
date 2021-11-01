@@ -4,6 +4,7 @@ in the .vimrc file all the components that are in the nvim folder must be loaded
 
 Example for this configuration:
 
+```json
 let g:nvim_data_root = stdpath('data')
 let g:nvim_config_root = stdpath('config')
 let g:config_file_list = ['/nvim-plugins/plugins.vim',
@@ -25,12 +26,13 @@ let g:config_file_list = ['/nvim-plugins/plugins.vim',
 for f in g:config_file_list
     execute 'source ' . g:nvim_config_root . f
 endfor
+```
 
 # Folders:
 
-general: Here the general configurations of neovim, colorscheme, rules, line numbers, copy functionality are saved
-keymapping: the key combinations used are saved
-nvim-pligins: here the plugins to be installed are declared
+- general: Here the general configurations of neovim, colorscheme, rules, line numbers, copy functionality are saved
+- keymapping: the key combinations used are saved
+- nvim-pligins: here the plugins to be installed are declared
 plug-config: here the configurations of the installed plugins are separated by plugin
 
 
