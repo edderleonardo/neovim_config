@@ -1,0 +1,9 @@
+{
+  "python.jediEnabled": false,
+  "python.venvFolders": ["envs", ".pyenv, .virtualenvs"],
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnSaveFiletypes": ["python", "json"],
+  "html.enable": true,
+  "html.filetypes": ["html", "handlebars", "django", "htmldjango"],
+  "html.format.enable": true
+}
