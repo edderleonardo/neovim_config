@@ -27,7 +27,8 @@ set shiftwidth=4
 set expandtab
 set smartcase
 set incsearch
-set nohlsearch
+set hlsearch
+nnoremap <CR> :noh<CR><CR>:<backspace>
 set completeopt=menuone,noinsert,noselect
 set signcolumn=yes
 set colorcolumn=80,120  " Multiple columns for django
@@ -55,3 +56,10 @@ let g:loaded_python_provider = 0
 
 " Ruta donde se creó el ambiente de Python para neovim.
 let g:python3_host_prog = '~/.virtualenvs/neovim/bin/python'
+
+
+autocmd FileType html setlocal ts=2 sts=2 sw=2
+autocmd FileType htmldjango setlocal ts=2 sts=2 sw=2
+autocmd FileType javascript setlocal ts=4 sts=4 sw=4
+autocmd FileType css setlocal ts=2 sts=2 sw=2
+autocmd FileType scss setlocal ts=2 sts=2 sw=2

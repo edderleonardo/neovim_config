@@ -17,9 +17,6 @@ nnoremap <S-Down> :m+<CR>
 " magic console.log()
 nnoremap <Leader>L "ayiw<CR>iconsole.log('<C-R>a: ', <C-R>a);<CR><Esc>
 
-" Kill buffer (current file close permanent)
-nmap <Leader>q :BufferClose<CR>
-
 " tags show funtions and vars in current file
 nmap <F8> :TagbarToggle<CR>
 
@@ -28,7 +25,10 @@ nmap <leader>t :Term<CR>
 nmap <leader>1t :10Term<CR>
 nmap <leader>2t :18Term<CR>
 
-" Alter Buffers
-nnoremap <C-a> :Buffers <Cr>
-
 autocmd BufWrite *.py :CocCommand python.sortImports
+
+" barbar keys 
+" Kill buffer (current file close permanent)
+nmap <Leader>q :BufferClose<CR>
+" Magic buffer-picking mode
+nnoremap <silent> <C-a> :BufferPick<CR>
