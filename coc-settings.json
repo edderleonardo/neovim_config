@@ -5,5 +5,13 @@
   "coc.preferences.formatOnSaveFiletypes": ["python", "json"],
   "html.enable": true,
   "html.filetypes": ["html", "handlebars", "django", "htmldjango"],
-  "html.format.enable": true
+  "html.format.enable": true,
+  "coc.source.emoji.filetypes": ["markdown"],
+  "codeLens.enable": true,
+  "diagnostic.errorSign": "✘",
+  "diagnostic.warningSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.enableMessage": "jump",
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false
 }

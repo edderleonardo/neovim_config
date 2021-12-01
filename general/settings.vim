@@ -27,8 +27,8 @@ set shiftwidth=4
 set expandtab
 set smartcase
 set incsearch
-set hlsearch
-nnoremap <CR> :noh<CR><CR>:<backspace>
+set hlsearch"codeLens.enable": true,
+nnoremap <CR> :noh<CR><CR>:<backspace>"codeLens.enable": true,
 set completeopt=menuone,noinsert,noselect
 set signcolumn=yes
 set colorcolumn=80,120  " Multiple columns for django
@@ -63,3 +63,10 @@ autocmd FileType htmldjango setlocal ts=2 sts=2 sw=2
 autocmd FileType javascript setlocal ts=4 sts=4 sw=4
 autocmd FileType css setlocal ts=2 sts=2 sw=2
 autocmd FileType scss setlocal ts=2 sts=2 sw=2
+
+ autocmd ColorScheme * 
+              \ hi CocErrorSign  ctermfg=Red guifg=#ff0000 | 
+              \ hi CocWarningSign  ctermfg=Brown guifg=#ff922b |
+              \ hi CocInfoSign  ctermfg=Yellow guifg=#fab005 |
+              \ hi CocHintSign  ctermfg=Blue guifg=#15aabf |
+              \ hi CocUnderline  cterm=underline gui=underline |
